@@ -1,20 +1,31 @@
-*{
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#E68E36, #DD517F );
 }
 
-body {
-    background: linear-gradient(#E68E36, #DD517F );
+h1 {
+    text-align: center;
 }
 
 section {
     display: grid;
-    grid-template-columns: repeat(3, 15vmin);
-    grid-template-rows: repeat(3, 15vmin);
-    gap: 1vmin;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 50px auto;
+    text-align: center;
 
 }
-section > div {
-    border: 2vmin solid #461e52;
+
+.tic { 
+
+width: 100px;
+height: 100px;
+border: 2px solid #461e52;
+cursor: pointer;
+line-height: 100px;
+font-size: 60px;
 }
