@@ -6,23 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">  
     <title>Tic-Tac-Toe</title>
 </head>
 
 <body>
     <h1>Tic-Tac-Toe</h1>
+    <h4>Player <span id="player">X</span> your turn</h4>
+    
     <section>
-        <div class="tic"></div>
-        <div class="tic"></div>
-        <div class="tic"></div>
-        <div class="tic"></div>
-        <div class="tic"></div>
-        <div class="tic"></div>
-        <div class="tic"></div>
-        <div class="tic"></div>
-        <div class="tic"></div>
-        <div class="tic"></div>
+        <div class="tic top left"></div>
+        <div class="tic top right left"></div>
+        <div class="tic top right"></div>
+        <div class="tic bottom top left"></div>
+        <div class="tic bottom top right left"></div>
+        <div class="tic bottom top right"></div>
+        <div class="tic bottom left"></div>
+        <div class="tic bottom right left"></div>
+        <div class="tic bottom right"></div>
     </section>
+    <h2>Winner:</h2>
+    <button class="reset" type="reset" style="width: 15%; height: 10%;">Restart Game</button>
     <script src="main.js"></script>
 </body>
 
