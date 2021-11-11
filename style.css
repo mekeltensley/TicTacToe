@@ -21,7 +21,6 @@ h2 {
     color: white;
 }
 
-
 section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -52,14 +51,50 @@ line-height: 100px;
 font-size: 60px;
 
 }
-.tic:hover {
-    background: #acaec5;
-    opacity: 0.7;
-}
 
 button {
+    position: absolute;
+    margin-top: 20%;
     color: white;
-    background: #461e52;
+    background-color: #461e52;
     font-size: 25px;
     border: none;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(#E68E36, #DD517F);
+    width: 500px;
+    height: 350px;
+    box-shadow: 0 25px 50px #461e52,
+    0 0 0 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.message {
+    margin-bottom: 35%;
+}
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 30px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 35px;
+}
+.reset {
+    cursor: pointer;
+    width: 50%; 
+    height: 20%;
+}
+
+.x, .o {
+    color: pink;
 }
