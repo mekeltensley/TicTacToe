@@ -13,21 +13,27 @@
 
 <body>
     <h1>Tic-Tac-Toe</h1>
-    <h4>Player <span id="player">X</span> your turn</h4>
+    <h2>Player <span id="player">X</span> your turn</h2>
     
     <section>
-        <div class="tic top left"></div>
-        <div class="tic top right left"></div>
-        <div class="tic top right"></div>
-        <div class="tic bottom top left"></div>
-        <div class="tic bottom top right left"></div>
-        <div class="tic bottom top right"></div>
-        <div class="tic bottom left"></div>
-        <div class="tic bottom right left"></div>
-        <div class="tic bottom right"></div>
+        <div class="tic top left x"></div>
+        <div class="tic top right left o"></div>
+        <div class="tic top right x"></div>
+        <div class="tic bottom top left o"></div>
+        <div class="tic bottom top right left x"></div>
+        <div class="tic bottom top right o"></div>
+        <div class="tic bottom left x"></div>
+        <div class="tic bottom right left o"></div>
+        <div class="tic bottom right x"></div>
     </section>
-    <h2>Winner:</h2>
-    <button class="reset" type="reset" style="width: 15%; height: 10%;">Restart Game</button>
+
+    <div class="popup">
+        <h2 class="message">Player <span id="whoWon">X</span> WINS</h2>
+        <button class="reset" type="reset">Restart Game</button>
+        <div class="close">x</div>        
+    </div>
+    
+
     <script src="main.js"></script>
 </body>
 
