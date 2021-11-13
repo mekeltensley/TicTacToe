@@ -74,6 +74,14 @@ for (let i = 0; i < tiles.length; i++) {
       ) {
         displayWinner(2, 4, 6);
 
+      } else if (
+        tiles[0].innerHTML && tiles[1].innerHTML && tiles[2].innerHTML 
+        && tiles[3].innerHTML && tiles[4].innerHTML && tiles[5].innerHTML
+        && tiles[6].innerHTML && tiles[7].innerHTML && tiles[8].innerHTML 
+           
+      ) {
+        console.log("Game Over");
+        document.getElementById("restart-game").classList.remove("hidden");
       }
 
     }
