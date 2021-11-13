@@ -17,22 +17,29 @@
     
     <section>
         <div class="tic top left x"></div>
-        <div class="tic top right left o"></div>
-        <div class="tic top right x"></div>
-        <div class="tic bottom top left o"></div>
-        <div class="tic bottom top right left x"></div>
-        <div class="tic bottom top right o"></div>
-        <div class="tic bottom left x"></div>
-        <div class="tic bottom right left o"></div>
-        <div class="tic bottom right x"></div>
+        <div class="tic top right left"></div>
+        <div class="tic top right"></div>
+        <div class="tic bottom top left"></div>
+        <div class="tic bottom top right left"></div>
+        <div class="tic bottom top right"></div>
+        <div class="tic bottom left"></div>
+        <div class="tic bottom right left"></div>
+        <div class="tic bottom right"></div>
     </section>
 
-    <div class="popup">
-        <h2 class="message">Player <span id="whoWon">X</span> WINS</h2>
-        <button class="reset" type="reset">Restart Game</button>
-        <div class="close">x</div>        
+
+    <div id="popup" class="show">
+        <h2 id="message">Player <span id="whoWon">X</span> WINS</h2>
+        <button id="reset" type="reset">Play Again</button>
+        <div id="close">x</div>        
     </div>
-    
+<!---------
+    Pop up window if there is no winner
+---->
+    <div id="restart-game" class="show">
+        <h2 id="no-winner">No Winner</h2>
+        <button id="reset" type="reset">Restart Game</button>
+    </div>
 
     <script src="main.js"></script>
 </body>
