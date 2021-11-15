@@ -75,13 +75,15 @@ for (let i = 0; i < tiles.length; i++) {
         displayWinner(2, 4, 6);
 
       } else if (
-        tiles[0].innerHTML && tiles[1].innerHTML && tiles[2].innerHTML 
-        && tiles[3].innerHTML && tiles[4].innerHTML && tiles[5].innerHTML
-        && tiles[6].innerHTML && tiles[7].innerHTML && tiles[8].innerHTML 
-           
+        tiles[0].innerHTML != tiles[1].innerHTML &&
+        tiles[2].innerHTML != tiles[3].innerHTML &&
+        tiles[4].innerHTML != tiles[5].innerHTML &&
+        tiles[6].innerHTML != tiles[7].innerHTML && tiles[8].innerHTML
+
       ) {
-        console.log("Game Over");
-        document.getElementById("restart-game").classList.remove("hidden");
+
+        noWinner();
+
       }
 
     }
@@ -89,7 +91,7 @@ for (let i = 0; i < tiles.length; i++) {
   });
 }
 
-//Displays the winner
+// Displays the winner
 
 function displayWinner(a, b, c) {
 
@@ -111,16 +113,25 @@ document.getElementById("reset").addEventListener("click", function () {
 
 });
 
-document.getElementById("close").addEventListener("click", function() {
-  document.getElementById("popup").style.visibility = "hidden";
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+// displays second pop up box if there is no winner
+
+function noWinner() {
+
+  document.getElementById("whoWon").innerHTML = currentPlayer == "x" ? "o" : null;
+
+  document.getElementById("restart-game").style.visibility = "visible";
+}
+
+
+// resets the game if there is no winner 
+
+document.getElementById("restart").addEventListener("click", function () {
+  for (let i = 0; i < tiles.length; i++) {
+
+    tiles[i].innerHTML = "";
+  }
+  document.getElementById("restart-game").style.visibility = "hidden";
+
 });
-
-
-// //resets the game  if there is no winner 
-// document.getElementById("reset").addEventListener("click", function () {
-//   for (let i = 0; i < tiles.length; i++) {
-//     tiles[i].innerHTML = null;
-//   }
-//   document.getElementById("restart-game").style.visibility = "hidden";
-
-// });
