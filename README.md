@@ -4,4 +4,4 @@
 
 # DEMO
 
-![TicTacToe Demo](images/Animation.gif)
+![TicTacToe Demo](Animation.gif)
