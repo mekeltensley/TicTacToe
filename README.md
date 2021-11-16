@@ -8,7 +8,7 @@
 
 # CODE SNIPPETS
 
-`js
+```js
 
 
       if (
@@ -76,5 +76,5 @@
 
   });
   
-  `js
+  ```
 
