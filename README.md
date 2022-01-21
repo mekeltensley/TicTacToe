@@ -4,15 +4,34 @@
 
 [Click Here](https://scammers-guide.herokuapp.com/) to preview.
 
-# DEMO
+## DEMO
 
 ![TicTacToe Demo](Animation.gif)
 
-# TECHNOLOGIES USED 
+## TECHNOLOGIES USED 
+Project was created with:
+* Javascript 
+* HTML5 
+* CSS3
+* Live Server VSCODE extension
 
-`Javascript HTML CSS`
+## SETUP
+To run this project:
 
-# CODE SNIPPETS
+`1` Fork and clone this repository 
+
+`2` Once cloned to local machine and open in editor
+
+`3` Select index.html file
+
+`4` Right click on index.html file tab
+
+`5` Select open with live server (which will automatically open file in browser
+*if live server extension is installed)
+### OR
+`6` Select copy path and paste file path into web broswer search
+
+## CODE SNIPPETS
 
 Logic created using DOM Manipulation. This logic checks each tile on the grid to determine if the current user has matched 3 of their shapes in a row. 
 
