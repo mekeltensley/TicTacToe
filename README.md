@@ -2,11 +2,19 @@
 
 ## Taking you back to childhood. This 3 x 3 grid game allows players to win by matching 3 x's or o's in a row. 
 
+[Click Here](https://scammers-guide.herokuapp.com/) to preview.
+
 # DEMO
 
 ![TicTacToe Demo](Animation.gif)
 
+# TECHNOLOGIES USED 
+
+`Javascript HTML CSS`
+
 # CODE SNIPPETS
+
+Logic created using DOM Manipulation. This logic checks each tile on the grid to determine if the current user has matched 3 of their shapes in a row. 
 
 ```js
 
